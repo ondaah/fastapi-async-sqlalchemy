@@ -1,8 +1,3 @@
-from pydantic_settings import BaseSettings
+__all__ = ("settings",)
 
-
-class Settings(BaseSettings):
-    db_url: str = "sqlite+aiosqlite:///./app.db"
-
-
-settings = Settings()
+from .settings import settings

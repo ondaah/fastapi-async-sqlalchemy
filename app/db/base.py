@@ -6,7 +6,7 @@ from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, Asyn
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, declared_attr
 
 from app.core import settings
-from app.utils import utcnow
+from app.utils.time import utcnow
 
 
 class BaseModel(DeclarativeBase):
